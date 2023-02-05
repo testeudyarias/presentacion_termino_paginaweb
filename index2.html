@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73075a4ed5.js" crossorigin="anonymous"></script>
+    <title>Tarea</title>
+    <style>
+      .carousel-caption{
+        background-color: #00000042;
+      }
+    </style>
+    <script>
+      function launchFullScreen(element) {
+        if(element.requestFullScreen) {
+          element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+          element.webkitRequestFullScreen();
+        }
+      }
+      // Lanza en pantalla completa en navegadores que lo soporten
+      function cancelFullScreen() {
+          if(document.cancelFullScreen) {
+              document.cancelFullScreen();
+          } else if(document.mozCancelFullScreen) {
+              document.mozCancelFullScreen();
+          } else if(document.webkitCancelFullScreen) {
+              document.webkitCancelFullScreen();
+          }
+      }
+      
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-12" style="text-align:right ;" >
+              <button class="btn btn-primary" onclick="launchFullScreen(document.documentElement);"> Entrar en pantalla completa </button>
+              <button class="btn btn-primary"  onclick="cancelFullScreen();"> Salir de pantalla completa </button>
+            </div>
+            <br><br>
+            <div class="col-12 col-lg-12 col-xl-12 col-xxl-12">
+                
+
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://borjaarandavaquero.com/wp-content/uploads/2021/07/que-es-html.jpg" class="d-block w-100" alt="html">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>HTML</h5>
+                      <p>
+                        HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" class="d-block w-100" alt="html5">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>HTML 5</h5>
+                      <p>
+                        HTML 5 es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML, conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML.​​
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg" class="d-block w-100" alt="css">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CSS</h5>
+                      <p>
+                        CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Javascript</h5>
+                      <p>
+                        JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+                      </p>
+                    </div>
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="https://img.freepik.com/vector-premium/banner-conceptos-palabra-front-end-programacion-aplicaciones-web_106317-84.jpg?w=2000" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Front End                      </h5>
+                      <p>
+                        Front End es la parte de una aplicación que interactúa con los usuarios, es conocida como el lado del cliente. Básicamente es todo lo que vemos en la pantalla cuando accedemos a un sitio web o aplicación: tipos de letra, colores, adaptación para distintas pantallas(RWD), los efectos del ratón, teclado, movimientos, desplazamientos, efectos visuales… y otros elementos que permiten navegar dentro de una página web. Este conjunto crea la experiencia del usuario.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://geekflare.com/wp-content/uploads/2021/09/Backend-solution.png" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Backend</h5>
+                      <p>
+                        El backend es la parte del desarrollo web que se encarga de que toda la lógica de una página web  funcione. Se trata del conjunto de acciones que pasan en una web pero que no vemos como, por ejemplo, la comunicación con el servidor.
+
+                        El encargado de desarrollar el back-end se pasa el día entero toqueteando diferentes y variados códigos de programación en lenguajes como PHP, Java o .Net.  
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.webempresa.com/wp-content/uploads/2020/08/que-es-servidor-web.png" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Servidor Web</h5>
+                      <p>
+                        Un servidor web o servidor HTTP es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del cliente. El código recibido por el cliente es renderizado por un navegador web.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://repararelpc.es/wp-content/uploads/2020/11/cms.jpg" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CMS</h5>
+                      <p>
+                        CMS son las siglas de Content Management System, en español Sistema de Gestión de Contenidos. En síntesis, un CMS te permite crear, organizar, publicar y eliminar contenidos de tu sitio web. Pero, por otro lado, en este artículo entenderás cómo y por qué utilizar un CMS en tu estrategia digital.​
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://aprendizaje360.com/wp-content/uploads/2019/10/2-1.png" class="d-block w-100" alt="BOOTSTRAP">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>LMS</h5>
+                      <p>
+                        Sistema de gestión de aprendizaje 
+                        LMS es una plataforma de e-learning. Las características clave pueden encontrarse en el siguiente acrónimo:
+                        L – Learning – Aprendizaje. Con un LMS puedes crear una base de datos de cursos online y materiales de capacitación. Un LMS será la única base de conocimiento dedicada a tu tema para que puedas mantener e incrementar la experiencia interna de la empresa.
+                        M – Management – Gestión. Puedes administrar cursos y estudiantes, incluso mejorar tu eficiencia.
+                        S – System – Sistema. Sistema informático para ser exacto. Incluso si tus empleados viven en diferentes zonas horarias, puedes capacitar a todos ellos sin salir de la oficina. Además, un LMS automatiza el trabajo más aburrido y tedioso como, por ejemplo, el proceso de clasificación, el procesamiento de estadísticas, la preparación de reportes.
+                      </p>
+                    </div>
+                  </div>
+
+
+
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+            </div>
+            
+            <div class="col-12 p-0" >
+                <hr>
+                <div class="p-3 mb-2 bg-light text-dark">
+                    &copy; Todos los derechos reservados por José Bernardo Lorenzo almonte (1-09-5919)
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+        
+       
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
+
